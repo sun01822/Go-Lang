@@ -57,6 +57,11 @@ func main() {
 	fmt.Printf("|%5.2f|\n", num2)   // %5.2f print floating-point number with minimum width of 5 characters and 2 digits after the decimal point
 	fmt.Printf("|%-5.2f|\n", num2)  // %-5.2f print floating-point number with minimum width of 5 characters and 2 digits after the decimal point, left-justified
 
+  
+	// Boolean format specifier
+	fmt.Printf("%t\n", boolean) // %t print boolean value
 
+	// Pointer format specifier
+    fmt.Printf("%p\n", &num3)   // %p print pointer address
 
 }
