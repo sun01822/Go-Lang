@@ -8,3 +8,4 @@ go run fileName.go
 
 ### To add package 
 go mod init folderName
+go mod tidy
