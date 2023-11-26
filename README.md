@@ -1,11 +1,11 @@
 # Go-Lang
-All practice Go language code will upload here
+All practice Go language codes will be uploaded here
 
 
 // command
-### To run go file
+### To run the go file
 go run fileName.go
 
 ### To add package 
-go mod init folderName
-go mod tidy
+- go mod init folderName
+- go mod tidy
