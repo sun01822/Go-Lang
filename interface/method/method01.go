@@ -11,6 +11,6 @@ type Rectangular struct {
 	Height float64
 }
 
-func EmptyInterface(I interface{}){
-	fmt.Printf("Value given to empty interface function is of type '%T' with value %v\n", I, I)
+func EmptyInterface(i interface{}){
+	fmt.Printf("Value given to empty interface function is of type '%T' with value %v\n", i, i)
 }
