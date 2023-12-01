@@ -6,4 +6,7 @@ import (
 
 func main() {
 	f.One()
+	f.Two()
+	f.Three()
+	f.Four()
 }
