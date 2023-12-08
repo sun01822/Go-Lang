@@ -63,5 +63,20 @@ func main() {
 
 	res2B, _ := json.Marshal(res2D)
 	fmt.Println(string(res2B))
+
+	byt := []byte(
+		`
+		{
+			"num": 6.13,
+			"strs": ["a", "b", "c"]
+		}
+		`,
+	)
+
+	var v map[string]interface{}
+	if err := json.Unmarshal(byt, &v); err != nil {
+		panic(err)
+	}
+	fmt.Println(v)
 	
 }
