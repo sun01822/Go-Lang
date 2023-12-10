@@ -7,7 +7,7 @@ func sum(s []int, c chan int) {
 	for _, val := range s {
 		sum += val
 	}
-	c <- sum
+	c <- sum   // write in to the channel
 }
 
 func main() {
@@ -18,8 +18,7 @@ func main() {
 	go sum(s1[:5], c)
 	go sum(s1[5:], c)
 
-	x, y := <-c, <-c
+	x, y := <-c, <-c   // receive data in to the channel
 	fmt.Println(x, y, x+y)
 }
-
 
