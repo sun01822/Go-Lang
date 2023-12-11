@@ -30,7 +30,7 @@ func main() {
 	go numbers()
 	go alphabets()
 	time.Sleep(3000 * time.Millisecond)
-	
+	/// Updated
 }
 
 // Output:
