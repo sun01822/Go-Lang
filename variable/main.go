@@ -5,6 +5,8 @@ import (
 	"fmt"
 )
 
+var message string = "Welcome to scalar"  // global variable
+
 func main() {
 	var_1, var_2 := 1, "hi"
 	fmt.Println(var_1, var_2)
@@ -17,4 +19,11 @@ func main() {
 	}
 	fmt.Println(var_2)
 	// fmt.Println(var_4) // error: undefined: var_4
+
+	fmt.Println(message + " from main()")
+	displayMessage()
+}
+
+func displayMessage(){
+	fmt.Println(message + " from displayMessage()")
 }
