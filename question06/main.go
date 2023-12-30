@@ -11,6 +11,7 @@ type response2 struct {
 }
 
 func main() {
+    var	new string = "new"
 	jsonStr := `
 		{
 			"page-number": 1,
