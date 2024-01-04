@@ -17,6 +17,14 @@ type Cylinder struct{
 	height float64
 }
 
+type Cube struct{
+	side float64
+}
+
+func (c Cube) Area() float64{
+	return 6*c.side*c.side
+}
+
 func (c Cylinder) Area() float64{
 	return 2*3.14*c.radius*c.height
 }
@@ -41,5 +49,33 @@ func main(){
 	fmt.Println("Area of cylinder is", cylinder3.Area())
 	fmt.Println("Volume of cylinder is", cylinder3.Volume())
 
+
+	var s Shape = Cylinder{3.2,4.3}
+	cylinder4, ok := s.(Cylinder)
+	if ok{
+		fmt.Println("Area of cylinder is", cylinder4.Area())
+		fmt.Println("Volume of cylinder is", cylinder4.Volume())
+	}else{
+		fmt.Println("Shape is not of type Cylinder")
+	}
+
+	var o Object = Cylinder{3.2,4.3}
+	cylinder5, ok := o.(Cylinder)
+	if ok{
+		fmt.Println("Area of cylinder is", cylinder5.Area())
+		fmt.Println("Volume of cylinder is", cylinder5.Volume())
+	}else{
+		fmt.Println("Shape is not of type Cylinder")
+	}
+
+	var s1 Shape = Cube{3}
+	cylinder6, ok := s1.(Cylinder)
+	if ok{
+		fmt.Println("Area of cylinder is", cylinder6.Area())
+		fmt.Println("Volume of cylinder is", cylinder6.Volume())
+	}else{
+		fmt.Println("Shape is not of type Cylinder")
+	}
+		
 }
 
