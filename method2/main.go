@@ -11,7 +11,9 @@ func (num myNumber) square() myNumber{
 }
 
 func main(){
-	num := myNumber(10)
-	sq := num.square()
-	fmt.Printf("The square of %d is %d\n",num,sq)	
+	var num1 myNumber = 5
+	num2 := myNumber(0)
+	sq := num2.square()
+	fmt.Printf("The square of %d is %d\n",num1,num1.square())
+	fmt.Printf("The square of %d is %d\n",num2,sq)	
 }
