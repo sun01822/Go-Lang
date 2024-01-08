@@ -18,7 +18,7 @@ func main(){
 	fmt.Printf("value = %v | type - %T\n", result, result)
 
 
-	// formating float
+	// formating numbers
 	var d1 int = 10
 	fmt.Printf("in binary=%b\n", d1)
 	fmt.Printf("in decimal=%d\n", d1)
